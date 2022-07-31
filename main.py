@@ -25,6 +25,5 @@ for i in progression:
         myMidi.addNote(track, channel, root.pitch.midi + i.midi, time, duration, volume)
     time += duration
 
-
-with open("testOutput.mid", "wb") as f:
+with open("output.mid", "wb") as f:
     myMidi.writeFile(f)
